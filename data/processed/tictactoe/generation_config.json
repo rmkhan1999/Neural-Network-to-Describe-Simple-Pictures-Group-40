@@ -1,0 +1,25 @@
+{
+  "task": "tictactoe",
+  "seed": 40,
+  "num_samples": 300,
+  "split_ratio": {
+    "train": 0.8,
+    "val": 0.1,
+    "test": 0.1
+  },
+  "min_occupied": 2,
+  "max_occupied": 6,
+  "allow_single_player": false,
+  "position_order": [
+    "top left",
+    "top middle",
+    "top right",
+    "middle left",
+    "center",
+    "middle right",
+    "bottom left",
+    "bottom middle",
+    "bottom right"
+  ],
+  "caption_format": "X is in [positions]; O is in [positions]"
+}
