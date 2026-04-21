@@ -10,7 +10,7 @@ from config import (
 )
 
 # paths
-PROJECT_ROOT = Path(__file__).resolve().parent.parent
+PROJECT_ROOT = Path(__file__).resolve().parents[2]
 DATA_ROOT = PROJECT_ROOT / "data" / "processed" / "shapes"
 IMAGE_ROOT = DATA_ROOT / "images"
 (IMAGE_ROOT / "train").mkdir(exist_ok=True, parents=True)
@@ -167,6 +167,7 @@ def generate_dataset(total_count=1000):
 
 
 def save_jsonl(samples, output_path):
+    output_path.parent.mkdir(parents=True, exist_ok=True)
     with open(output_path, "w", encoding="utf-8") as f:
         for sample in samples:
             f.write(json.dumps(sample, ensure_ascii=False) + "\n")

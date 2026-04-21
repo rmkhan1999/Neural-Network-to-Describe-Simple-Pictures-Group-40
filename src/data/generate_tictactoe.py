@@ -9,6 +9,9 @@ from typing import Dict, List, Sequence, Tuple
 
 from PIL import Image, ImageDraw
 
+PROJECT_ROOT = Path(__file__).resolve().parents[2]
+DEFAULT_OUTPUT_ROOT = PROJECT_ROOT / "data" / "processed" / "tictactoe"
+DEFAULT_PREVIEWS_ROOT = PROJECT_ROOT / "data" / "previews" / "tictactoe"
 
 POSITIONS = {
     "TL": (0, 0),
@@ -155,8 +158,8 @@ def parse_args() -> GeneratorConfig:
     parser = argparse.ArgumentParser()
     parser.add_argument("--num-samples", type=int, default=300)
     parser.add_argument("--seed", type=int, default=40)
-    parser.add_argument("--output-root", type=Path, default=Path("data/processed/tictactoe"))
-    parser.add_argument("--previews-root", type=Path, default=Path("data/previews/tictactoe"))
+    parser.add_argument("--output-root", type=Path, default=DEFAULT_OUTPUT_ROOT)
+    parser.add_argument("--previews-root", type=Path, default=DEFAULT_PREVIEWS_ROOT)
     parser.add_argument("--image-size", type=int, default=256)
     parser.add_argument("--train-ratio", type=float, default=0.8)
     parser.add_argument("--val-ratio", type=float, default=0.1)
@@ -181,8 +184,8 @@ def parse_args() -> GeneratorConfig:
     return GeneratorConfig(
         num_samples=args.num_samples,
         seed=args.seed,
-        output_root=args.output_root,
-        previews_root=args.previews_root,
+        output_root=args.output_root.resolve(),
+        previews_root=args.previews_root.resolve(),
         image_size=args.image_size,
         train_ratio=args.train_ratio,
         val_ratio=args.val_ratio,
@@ -378,6 +381,7 @@ def write_jsonl(path: Path, rows: Sequence[Dict[str, object]]) -> None:
 
 
 def generate_dataset(config: GeneratorConfig) -> None:
+    (config.output_root / "metadata").mkdir(parents=True, exist_ok=True)
     rng = random.Random(config.seed)
     split_map = split_indices(config.num_samples, config.seed, config.train_ratio, config.val_ratio)
     index_to_split: Dict[int, str] = {}

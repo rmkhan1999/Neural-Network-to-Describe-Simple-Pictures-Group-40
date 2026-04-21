@@ -5,6 +5,8 @@ import json
 from pathlib import Path
 from typing import Dict, List, Set
 
+PROJECT_ROOT = Path(__file__).resolve().parents[2]
+DEFAULT_DATASET_ROOT = PROJECT_ROOT / "data" / "processed" / "tictactoe"
 
 POSITION_ORDER = [
     "top left",
@@ -21,7 +23,7 @@ POSITION_ORDER = [
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser()
-    parser.add_argument("--dataset-root", type=Path, default=Path("data/processed/tictactoe"))
+    parser.add_argument("--dataset-root", type=Path, default=DEFAULT_DATASET_ROOT)
     return parser.parse_args()
 
 
@@ -127,7 +129,7 @@ def validate_row(row: Dict[str, object], ids_seen: Set[str]) -> List[str]:
 
 def main() -> None:
     args = parse_args()
-    dataset_root = args.dataset_root
+    dataset_root = args.dataset_root.resolve()
     metadata_root = dataset_root / "metadata"
     split_rows = {
         "train": parse_jsonl(metadata_root / "train.jsonl"),

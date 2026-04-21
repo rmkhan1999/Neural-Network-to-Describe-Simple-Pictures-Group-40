@@ -14,9 +14,10 @@ import sys
 sys.path.insert(0, str(Path(__file__).parent))
 from config import METADATA_DIR, METADATA_FILE
 
-
+PROJECT_ROOT = Path(__file__).resolve().parents[2]
+DEFAULT_DATA_DIR = PROJECT_ROOT / "data" / "processed" / "numbers"
 def summarise(data_dir: str) -> None:
-    data_dir  = Path(data_dir)
+    data_dir = Path(data_dir).resolve()
     meta_path = data_dir / METADATA_DIR / METADATA_FILE
 
     if not meta_path.exists():
@@ -66,7 +67,7 @@ def summarise(data_dir: str) -> None:
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Frequency summary for the Numbers dataset.")
-    parser.add_argument("--data_dir", type=str, default=".",
-                        help="Root of the numbers dataset folder.")
+    parser.add_argument("--data_dir", type=str, default=str(DEFAULT_DATA_DIR),
+                    help="Root of the numbers dataset folder.")
     args = parser.parse_args()
     summarise(args.data_dir)

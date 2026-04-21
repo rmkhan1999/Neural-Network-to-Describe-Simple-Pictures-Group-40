@@ -14,6 +14,8 @@ import sys
 sys.path.insert(0, str(Path(__file__).parent))
 from config import COLORS, SIZES, DIGIT_LENGTHS, METADATA_DIR, METADATA_FILE
 
+PROJECT_ROOT = Path(__file__).resolve().parents[2]
+DEFAULT_DATA_DIR = PROJECT_ROOT / "data" / "processed" / "numbers"
 REQUIRED_FIELDS = {
     "id", "task", "image_path", "symbolic_state",
     "caption", "canonical_label", "split",
@@ -22,7 +24,7 @@ VALID_SPLITS = {"train", "val", "test"}
 
 
 def check(data_dir: str, image_check_limit: int = 20) -> None:
-    data_dir  = Path(data_dir)
+    data_dir = Path(data_dir).resolve()
     meta_path = data_dir / METADATA_DIR / METADATA_FILE
 
     if not meta_path.exists():
@@ -145,8 +147,8 @@ def check(data_dir: str, image_check_limit: int = 20) -> None:
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Validate the Numbers dataset (Section 5.1).")
-    parser.add_argument("--data_dir",          type=str, default=".",
-                        help="Root of the numbers dataset folder.")
+    parser.add_argument("--data_dir",          type=str, default=str(DEFAULT_DATA_DIR),
+                    help="Root of the numbers dataset folder.")
     parser.add_argument("--image_check_limit", type=int, default=20,
                         help="How many images to physically open and check (default: 20).")
     args = parser.parse_args()

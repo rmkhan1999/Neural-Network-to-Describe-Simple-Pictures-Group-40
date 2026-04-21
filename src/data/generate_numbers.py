@@ -107,7 +107,7 @@ def generate(num_samples: int, seed: int, output_dir: str,
              font_path: str | None = None) -> None:
 
     rng        = random.Random(seed)
-    output_dir = Path(output_dir)
+    output_dir = Path(output_dir).resolve()
     meta_dir   = output_dir / METADATA_DIR
     img_root    = output_dir / "images"
 
@@ -191,7 +191,9 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Generate the Numbers dataset.")
     parser.add_argument("--num_samples", type=int, default=DEFAULT_NUM_SAMPLES)
     parser.add_argument("--seed",        type=int, default=DEFAULT_SEED)
-    parser.add_argument("--output_dir",  type=str, default=".")
+    PROJECT_ROOT = Path(__file__).resolve().parents[2]
+    DEFAULT_OUTPUT_DIR = PROJECT_ROOT / "data" / "processed" / "numbers"
+    parser.add_argument("--output_dir", type=str, default=str(DEFAULT_OUTPUT_DIR))
     parser.add_argument("--font_path",   type=str, default=None)
     parser.add_argument("--pilot", action="store_true",
                         help=f"Generate only {PILOT_NUM_SAMPLES} samples for manual review (Section 6.1).")
