@@ -2,7 +2,7 @@
 .DS_Store
 
 # generated datasets and previews
-data/processed/
+data/processed
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]

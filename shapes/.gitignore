@@ -1,6 +1,0 @@
-__pycache__/
-*.pyc
-
-data/processed/shapes/train/
-data/processed/shapes/val/
-data/processed/shapes/test/
