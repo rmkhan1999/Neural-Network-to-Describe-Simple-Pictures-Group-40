@@ -1,0 +1,602 @@
+[
+  {
+    "id": "shapes_test_000001",
+    "true_caption": "a large green circle is above a small yellow triangle",
+    "pred_caption": "a small green circle is above a large yellow triangle",
+    "exact_match": false
+  },
+  {
+    "id": "shapes_test_000002",
+    "true_caption": "a large blue triangle is right of a small yellow square",
+    "pred_caption": "a large yellow triangle is left of a small blue square",
+    "exact_match": false
+  },
+  {
+    "id": "shapes_test_000003",
+    "true_caption": "a small yellow circle is left of a large red triangle",
+    "pred_caption": "a large red circle is right of a small yellow triangle",
+    "exact_match": false
+  },
+  {
+    "id": "shapes_test_000004",
+    "true_caption": "a small yellow triangle is left of a small green square",
+    "pred_caption": "a small yellow triangle is left of a small green square",
+    "exact_match": true
+  },
+  {
+    "id": "shapes_test_000005",
+    "true_caption": "a large blue triangle is above a large red triangle",
+    "pred_caption": "a large blue triangle is below a large red triangle",
+    "exact_match": false
+  },
+  {
+    "id": "shapes_test_000006",
+    "true_caption": "a large red circle is right of a large yellow triangle",
+    "pred_caption": "a large red circle is left of a large yellow triangle",
+    "exact_match": false
+  },
+  {
+    "id": "shapes_test_000007",
+    "true_caption": "a small green square is below a small blue circle",
+    "pred_caption": "a small green square is below a small blue circle",
+    "exact_match": true
+  },
+  {
+    "id": "shapes_test_000008",
+    "true_caption": "a large blue triangle is above a large blue triangle",
+    "pred_caption": "a large blue triangle is below a large blue triangle",
+    "exact_match": false
+  },
+  {
+    "id": "shapes_test_000009",
+    "true_caption": "a small green square is left of a large green circle",
+    "pred_caption": "a small green square is left of a large green circle",
+    "exact_match": true
+  },
+  {
+    "id": "shapes_test_000010",
+    "true_caption": "a small green square is right of a large red square",
+    "pred_caption": "a small green square is right of a large red square",
+    "exact_match": true
+  },
+  {
+    "id": "shapes_test_000011",
+    "true_caption": "a large yellow triangle is left of a small blue square",
+    "pred_caption": "a large yellow triangle is left of a small blue square",
+    "exact_match": true
+  },
+  {
+    "id": "shapes_test_000012",
+    "true_caption": "a small red square is below a large red circle",
+    "pred_caption": "a small red circle is below a large red square",
+    "exact_match": false
+  },
+  {
+    "id": "shapes_test_000013",
+    "true_caption": "a small green circle is below a large blue circle",
+    "pred_caption": "a small green circle is below a large blue circle",
+    "exact_match": true
+  },
+  {
+    "id": "shapes_test_000014",
+    "true_caption": "a small green square is below a large green square",
+    "pred_caption": "a small green square is below a large green square",
+    "exact_match": true
+  },
+  {
+    "id": "shapes_test_000015",
+    "true_caption": "a large red square is below a small red circle",
+    "pred_caption": "a small red circle is below a large red square",
+    "exact_match": false
+  },
+  {
+    "id": "shapes_test_000016",
+    "true_caption": "a large yellow triangle is left of a large yellow triangle",
+    "pred_caption": "a large yellow triangle is left of a large yellow triangle",
+    "exact_match": true
+  },
+  {
+    "id": "shapes_test_000017",
+    "true_caption": "a large yellow square is below a large blue square",
+    "pred_caption": "a large blue square is above a large yellow square",
+    "exact_match": false
+  },
+  {
+    "id": "shapes_test_000018",
+    "true_caption": "a small yellow square is left of a small blue square",
+    "pred_caption": "a small blue square is right of a small yellow square",
+    "exact_match": false
+  },
+  {
+    "id": "shapes_test_000019",
+    "true_caption": "a large yellow circle is below a large blue circle",
+    "pred_caption": "a large yellow circle is below a large blue circle",
+    "exact_match": true
+  },
+  {
+    "id": "shapes_test_000020",
+    "true_caption": "a small blue circle is above a small green triangle",
+    "pred_caption": "a small green triangle is above a small blue circle",
+    "exact_match": false
+  },
+  {
+    "id": "shapes_test_000021",
+    "true_caption": "a small yellow square is left of a small blue triangle",
+    "pred_caption": "a small blue triangle is left of a small yellow square",
+    "exact_match": false
+  },
+  {
+    "id": "shapes_test_000022",
+    "true_caption": "a small green square is below a large yellow triangle",
+    "pred_caption": "a large yellow triangle is below a small green square",
+    "exact_match": false
+  },
+  {
+    "id": "shapes_test_000023",
+    "true_caption": "a small green circle is above a large yellow circle",
+    "pred_caption": "a small yellow circle is above a large green circle",
+    "exact_match": false
+  },
+  {
+    "id": "shapes_test_000024",
+    "true_caption": "a large green circle is above a large green square",
+    "pred_caption": "a large green circle is above a large green square",
+    "exact_match": true
+  },
+  {
+    "id": "shapes_test_000025",
+    "true_caption": "a large blue triangle is right of a large red triangle",
+    "pred_caption": "a large blue triangle is right of a small red triangle",
+    "exact_match": false
+  },
+  {
+    "id": "shapes_test_000026",
+    "true_caption": "a large red circle is above a large red square",
+    "pred_caption": "a large red square is below a large red circle",
+    "exact_match": false
+  },
+  {
+    "id": "shapes_test_000027",
+    "true_caption": "a small yellow square is above a large red triangle",
+    "pred_caption": "a large yellow triangle is below a small red square",
+    "exact_match": false
+  },
+  {
+    "id": "shapes_test_000028",
+    "true_caption": "a small blue square is below a small red triangle",
+    "pred_caption": "a small blue square is below a small red triangle",
+    "exact_match": true
+  },
+  {
+    "id": "shapes_test_000029",
+    "true_caption": "a large red triangle is right of a small yellow square",
+    "pred_caption": "a large red triangle is left of a small yellow square",
+    "exact_match": false
+  },
+  {
+    "id": "shapes_test_000030",
+    "true_caption": "a small green square is below a large green square",
+    "pred_caption": "a small green square is below a large green square",
+    "exact_match": true
+  },
+  {
+    "id": "shapes_test_000031",
+    "true_caption": "a large red square is left of a large green square",
+    "pred_caption": "a large red square is right of a small green square",
+    "exact_match": false
+  },
+  {
+    "id": "shapes_test_000032",
+    "true_caption": "a small blue triangle is right of a large yellow square",
+    "pred_caption": "a small yellow triangle is right of a large blue square",
+    "exact_match": false
+  },
+  {
+    "id": "shapes_test_000033",
+    "true_caption": "a small yellow triangle is right of a small red circle",
+    "pred_caption": "a small red triangle is right of a small yellow circle",
+    "exact_match": false
+  },
+  {
+    "id": "shapes_test_000034",
+    "true_caption": "a small green square is left of a small yellow circle",
+    "pred_caption": "a small yellow circle is right of a small green square",
+    "exact_match": false
+  },
+  {
+    "id": "shapes_test_000035",
+    "true_caption": "a small yellow triangle is left of a large blue triangle",
+    "pred_caption": "a large yellow triangle is left of a small blue triangle",
+    "exact_match": false
+  },
+  {
+    "id": "shapes_test_000036",
+    "true_caption": "a large blue circle is below a large green triangle",
+    "pred_caption": "a large blue circle is below a large green triangle",
+    "exact_match": true
+  },
+  {
+    "id": "shapes_test_000037",
+    "true_caption": "a large red square is left of a large yellow circle",
+    "pred_caption": "a large red circle is left of a large yellow square",
+    "exact_match": false
+  },
+  {
+    "id": "shapes_test_000038",
+    "true_caption": "a small red circle is left of a large yellow circle",
+    "pred_caption": "a large yellow circle is right of a small red circle",
+    "exact_match": false
+  },
+  {
+    "id": "shapes_test_000039",
+    "true_caption": "a large yellow circle is right of a small red circle",
+    "pred_caption": "a large yellow circle is right of a small red circle",
+    "exact_match": true
+  },
+  {
+    "id": "shapes_test_000040",
+    "true_caption": "a large yellow circle is left of a large yellow square",
+    "pred_caption": "a large yellow circle is left of a large yellow square",
+    "exact_match": true
+  },
+  {
+    "id": "shapes_test_000041",
+    "true_caption": "a large red square is above a large blue triangle",
+    "pred_caption": "a large blue triangle is below a large red square",
+    "exact_match": false
+  },
+  {
+    "id": "shapes_test_000042",
+    "true_caption": "a small blue square is right of a small green circle",
+    "pred_caption": "a small green circle is left of a small blue square",
+    "exact_match": false
+  },
+  {
+    "id": "shapes_test_000043",
+    "true_caption": "a small green square is right of a large red square",
+    "pred_caption": "a small green square is right of a large red square",
+    "exact_match": true
+  },
+  {
+    "id": "shapes_test_000044",
+    "true_caption": "a large red triangle is below a small red triangle",
+    "pred_caption": "a large red triangle is below a small red triangle",
+    "exact_match": true
+  },
+  {
+    "id": "shapes_test_000045",
+    "true_caption": "a small green square is left of a large green circle",
+    "pred_caption": "a small green square is left of a large green circle",
+    "exact_match": true
+  },
+  {
+    "id": "shapes_test_000046",
+    "true_caption": "a large blue circle is below a large green square",
+    "pred_caption": "a large blue square is above a large green circle",
+    "exact_match": false
+  },
+  {
+    "id": "shapes_test_000047",
+    "true_caption": "a large green circle is above a small blue triangle",
+    "pred_caption": "a large green circle is above a small blue triangle",
+    "exact_match": true
+  },
+  {
+    "id": "shapes_test_000048",
+    "true_caption": "a small blue triangle is above a large yellow circle",
+    "pred_caption": "a large blue circle is above a small yellow triangle",
+    "exact_match": false
+  },
+  {
+    "id": "shapes_test_000049",
+    "true_caption": "a small blue circle is right of a large green triangle",
+    "pred_caption": "a large green triangle is right of a small blue circle",
+    "exact_match": false
+  },
+  {
+    "id": "shapes_test_000050",
+    "true_caption": "a large blue square is left of a small green circle",
+    "pred_caption": "a large blue square is left of a small green circle",
+    "exact_match": true
+  },
+  {
+    "id": "shapes_test_000051",
+    "true_caption": "a small blue circle is below a small green circle",
+    "pred_caption": "a small green circle is above a small blue circle",
+    "exact_match": false
+  },
+  {
+    "id": "shapes_test_000052",
+    "true_caption": "a small blue circle is right of a small red circle",
+    "pred_caption": "a small blue circle is right of a small red circle",
+    "exact_match": true
+  },
+  {
+    "id": "shapes_test_000053",
+    "true_caption": "a large yellow circle is below a small red triangle",
+    "pred_caption": "a large yellow circle is below a small red triangle",
+    "exact_match": true
+  },
+  {
+    "id": "shapes_test_000054",
+    "true_caption": "a small yellow circle is left of a small red square",
+    "pred_caption": "a small red circle is left of a small yellow square",
+    "exact_match": false
+  },
+  {
+    "id": "shapes_test_000055",
+    "true_caption": "a small red circle is below a small blue triangle",
+    "pred_caption": "a small blue triangle is above a small red circle",
+    "exact_match": false
+  },
+  {
+    "id": "shapes_test_000056",
+    "true_caption": "a large red circle is below a large green square",
+    "pred_caption": "a large red circle is below a large green square",
+    "exact_match": true
+  },
+  {
+    "id": "shapes_test_000057",
+    "true_caption": "a small blue triangle is above a small red triangle",
+    "pred_caption": "a small blue triangle is above a small red triangle",
+    "exact_match": true
+  },
+  {
+    "id": "shapes_test_000058",
+    "true_caption": "a small blue square is below a small red circle",
+    "pred_caption": "a small blue square is below a small red circle",
+    "exact_match": true
+  },
+  {
+    "id": "shapes_test_000059",
+    "true_caption": "a large green triangle is below a large red circle",
+    "pred_caption": "a large green triangle is below a large red circle",
+    "exact_match": true
+  },
+  {
+    "id": "shapes_test_000060",
+    "true_caption": "a large yellow square is below a small yellow circle",
+    "pred_caption": "a large yellow square is below a small yellow circle",
+    "exact_match": true
+  },
+  {
+    "id": "shapes_test_000061",
+    "true_caption": "a large red square is above a small yellow square",
+    "pred_caption": "a large red square is above a small yellow square",
+    "exact_match": true
+  },
+  {
+    "id": "shapes_test_000062",
+    "true_caption": "a large red circle is left of a large red square",
+    "pred_caption": "a large red circle is left of a large red square",
+    "exact_match": true
+  },
+  {
+    "id": "shapes_test_000063",
+    "true_caption": "a large yellow triangle is left of a large blue triangle",
+    "pred_caption": "a large yellow triangle is left of a large blue triangle",
+    "exact_match": true
+  },
+  {
+    "id": "shapes_test_000064",
+    "true_caption": "a large green square is below a small yellow triangle",
+    "pred_caption": "a small green triangle is below a large yellow square",
+    "exact_match": false
+  },
+  {
+    "id": "shapes_test_000065",
+    "true_caption": "a large blue circle is right of a small yellow square",
+    "pred_caption": "a small blue circle is left of a large yellow square",
+    "exact_match": false
+  },
+  {
+    "id": "shapes_test_000066",
+    "true_caption": "a small red circle is right of a large red triangle",
+    "pred_caption": "a small red circle is right of a large red triangle",
+    "exact_match": true
+  },
+  {
+    "id": "shapes_test_000067",
+    "true_caption": "a small red square is below a large blue triangle",
+    "pred_caption": "a large blue triangle is below a small red square",
+    "exact_match": false
+  },
+  {
+    "id": "shapes_test_000068",
+    "true_caption": "a large red circle is right of a large green triangle",
+    "pred_caption": "a large green triangle is left of a large red circle",
+    "exact_match": false
+  },
+  {
+    "id": "shapes_test_000069",
+    "true_caption": "a large yellow square is right of a large yellow triangle",
+    "pred_caption": "a large yellow triangle is left of a large yellow square",
+    "exact_match": false
+  },
+  {
+    "id": "shapes_test_000070",
+    "true_caption": "a large blue square is above a small green square",
+    "pred_caption": "a small green square is above a large blue square",
+    "exact_match": false
+  },
+  {
+    "id": "shapes_test_000071",
+    "true_caption": "a large blue triangle is below a small red triangle",
+    "pred_caption": "a large blue triangle is below a small red triangle",
+    "exact_match": true
+  },
+  {
+    "id": "shapes_test_000072",
+    "true_caption": "a small red square is above a small yellow triangle",
+    "pred_caption": "a small yellow triangle is above a small red square",
+    "exact_match": false
+  },
+  {
+    "id": "shapes_test_000073",
+    "true_caption": "a large blue square is above a small yellow square",
+    "pred_caption": "a small blue square is above a large yellow square",
+    "exact_match": false
+  },
+  {
+    "id": "shapes_test_000074",
+    "true_caption": "a small green triangle is right of a large green triangle",
+    "pred_caption": "a small green triangle is left of a large green triangle",
+    "exact_match": false
+  },
+  {
+    "id": "shapes_test_000075",
+    "true_caption": "a large red circle is right of a small yellow square",
+    "pred_caption": "a small red circle is left of a large yellow square",
+    "exact_match": false
+  },
+  {
+    "id": "shapes_test_000076",
+    "true_caption": "a large yellow square is right of a small red circle",
+    "pred_caption": "a small red circle is left of a large yellow square",
+    "exact_match": false
+  },
+  {
+    "id": "shapes_test_000077",
+    "true_caption": "a large blue square is right of a small green triangle",
+    "pred_caption": "a large blue triangle is left of a small green square",
+    "exact_match": false
+  },
+  {
+    "id": "shapes_test_000078",
+    "true_caption": "a large yellow circle is right of a large yellow triangle",
+    "pred_caption": "a large yellow triangle is left of a large yellow circle",
+    "exact_match": false
+  },
+  {
+    "id": "shapes_test_000079",
+    "true_caption": "a small red square is left of a large yellow triangle",
+    "pred_caption": "a large red triangle is left of a small yellow square",
+    "exact_match": false
+  },
+  {
+    "id": "shapes_test_000080",
+    "true_caption": "a large green square is above a small red circle",
+    "pred_caption": "a small red circle is below a large green square",
+    "exact_match": false
+  },
+  {
+    "id": "shapes_test_000081",
+    "true_caption": "a large green triangle is above a large yellow circle",
+    "pred_caption": "a large yellow circle is below a large green triangle",
+    "exact_match": false
+  },
+  {
+    "id": "shapes_test_000082",
+    "true_caption": "a large green square is right of a large red triangle",
+    "pred_caption": "a large green square is right of a large red triangle",
+    "exact_match": true
+  },
+  {
+    "id": "shapes_test_000083",
+    "true_caption": "a small blue circle is left of a small red square",
+    "pred_caption": "a small red circle is left of a small blue square",
+    "exact_match": false
+  },
+  {
+    "id": "shapes_test_000084",
+    "true_caption": "a small green circle is above a large red square",
+    "pred_caption": "a small red circle is below a large green square",
+    "exact_match": false
+  },
+  {
+    "id": "shapes_test_000085",
+    "true_caption": "a large yellow square is above a large red square",
+    "pred_caption": "a large yellow square is below a large red square",
+    "exact_match": false
+  },
+  {
+    "id": "shapes_test_000086",
+    "true_caption": "a large yellow square is above a large red triangle",
+    "pred_caption": "a large yellow triangle is below a large red square",
+    "exact_match": false
+  },
+  {
+    "id": "shapes_test_000087",
+    "true_caption": "a small green square is left of a small green square",
+    "pred_caption": "a small green square is left of a large green square",
+    "exact_match": false
+  },
+  {
+    "id": "shapes_test_000088",
+    "true_caption": "a large blue square is above a small green square",
+    "pred_caption": "a small green square is above a large blue square",
+    "exact_match": false
+  },
+  {
+    "id": "shapes_test_000089",
+    "true_caption": "a small green triangle is right of a small red triangle",
+    "pred_caption": "a small green triangle is left of a small red triangle",
+    "exact_match": false
+  },
+  {
+    "id": "shapes_test_000090",
+    "true_caption": "a small green square is above a large yellow circle",
+    "pred_caption": "a large yellow square is below a small green circle",
+    "exact_match": false
+  },
+  {
+    "id": "shapes_test_000091",
+    "true_caption": "a large red triangle is left of a large yellow triangle",
+    "pred_caption": "a large yellow triangle is left of a large red triangle",
+    "exact_match": false
+  },
+  {
+    "id": "shapes_test_000092",
+    "true_caption": "a large blue square is right of a large yellow triangle",
+    "pred_caption": "a large yellow triangle is left of a large blue square",
+    "exact_match": false
+  },
+  {
+    "id": "shapes_test_000093",
+    "true_caption": "a small red triangle is below a large blue triangle",
+    "pred_caption": "a large blue triangle is below a small red triangle",
+    "exact_match": false
+  },
+  {
+    "id": "shapes_test_000094",
+    "true_caption": "a large green triangle is right of a small blue square",
+    "pred_caption": "a large green triangle is right of a small blue square",
+    "exact_match": true
+  },
+  {
+    "id": "shapes_test_000095",
+    "true_caption": "a large blue circle is below a large yellow square",
+    "pred_caption": "a large yellow square is below a large blue circle",
+    "exact_match": false
+  },
+  {
+    "id": "shapes_test_000096",
+    "true_caption": "a large red triangle is below a large green square",
+    "pred_caption": "a large green square is above a large red triangle",
+    "exact_match": false
+  },
+  {
+    "id": "shapes_test_000097",
+    "true_caption": "a small green triangle is below a large blue circle",
+    "pred_caption": "a small green triangle is below a large blue circle",
+    "exact_match": true
+  },
+  {
+    "id": "shapes_test_000098",
+    "true_caption": "a small blue circle is below a large yellow square",
+    "pred_caption": "a small blue circle is below a large yellow square",
+    "exact_match": true
+  },
+  {
+    "id": "shapes_test_000099",
+    "true_caption": "a large yellow triangle is above a small blue square",
+    "pred_caption": "a large yellow triangle is below a small blue square",
+    "exact_match": false
+  },
+  {
+    "id": "shapes_test_000100",
+    "true_caption": "a small red square is left of a small red triangle",
+    "pred_caption": "a small red square is left of a small red triangle",
+    "exact_match": true
+  }
+]

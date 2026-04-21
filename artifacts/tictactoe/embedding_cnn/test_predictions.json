@@ -1,0 +1,182 @@
+[
+  {
+    "id": "tictactoe_test_000001",
+    "true_caption": "X is in middle left and bottom middle and bottom right; O is in top middle and bottom left",
+    "pred_caption": "X is in top middle and bottom left; O is in top right and middle left",
+    "exact_match": false
+  },
+  {
+    "id": "tictactoe_test_000002",
+    "true_caption": "X is in top right and center and bottom right; O is in top left and top middle and middle right",
+    "pred_caption": "X is in top middle and bottom left; O is in top right and middle left",
+    "exact_match": false
+  },
+  {
+    "id": "tictactoe_test_000003",
+    "true_caption": "X is in top right and center and middle right; O is in top middle and bottom left and bottom middle",
+    "pred_caption": "X is in top middle and bottom left; O is in top right and middle left",
+    "exact_match": false
+  },
+  {
+    "id": "tictactoe_test_000004",
+    "true_caption": "X is in top right and middle left and bottom middle; O is in top left and middle right and bottom left",
+    "pred_caption": "X is in top middle and bottom left; O is in top right and middle left",
+    "exact_match": false
+  },
+  {
+    "id": "tictactoe_test_000005",
+    "true_caption": "X is in top left and middle left; O is in bottom left and bottom middle",
+    "pred_caption": "X is in top middle and bottom left; O is in top right and middle left",
+    "exact_match": false
+  },
+  {
+    "id": "tictactoe_test_000006",
+    "true_caption": "X is in middle left and middle right and bottom right; O is in top middle and top right",
+    "pred_caption": "X is in top middle and bottom left; O is in top right and middle left",
+    "exact_match": false
+  },
+  {
+    "id": "tictactoe_test_000007",
+    "true_caption": "X is in top right; O is in center",
+    "pred_caption": "X is in top middle and bottom left; O is in top right and middle left",
+    "exact_match": false
+  },
+  {
+    "id": "tictactoe_test_000008",
+    "true_caption": "X is in top middle and middle right and bottom left; O is in top left and center",
+    "pred_caption": "X is in top middle and bottom left; O is in top right and middle left",
+    "exact_match": false
+  },
+  {
+    "id": "tictactoe_test_000009",
+    "true_caption": "X is in center and bottom right; O is in middle left and bottom middle",
+    "pred_caption": "X is in top middle and bottom left; O is in top right and middle left",
+    "exact_match": false
+  },
+  {
+    "id": "tictactoe_test_000010",
+    "true_caption": "X is in middle left and bottom middle and bottom right; O is in top right and center and bottom left",
+    "pred_caption": "X is in top middle and bottom left; O is in top right and middle left",
+    "exact_match": false
+  },
+  {
+    "id": "tictactoe_test_000011",
+    "true_caption": "X is in middle right and bottom left; O is in top right and bottom middle",
+    "pred_caption": "X is in top middle and bottom left; O is in top right and middle left",
+    "exact_match": false
+  },
+  {
+    "id": "tictactoe_test_000012",
+    "true_caption": "X is in middle right and bottom right; O is in center",
+    "pred_caption": "X is in top middle and bottom left; O is in top right and middle left",
+    "exact_match": false
+  },
+  {
+    "id": "tictactoe_test_000013",
+    "true_caption": "X is in center and middle right and bottom left; O is in top left and top right and bottom middle",
+    "pred_caption": "X is in top middle and bottom left; O is in top right and middle left",
+    "exact_match": false
+  },
+  {
+    "id": "tictactoe_test_000014",
+    "true_caption": "X is in bottom left; O is in top middle",
+    "pred_caption": "X is in top middle and bottom left; O is in top right and middle left",
+    "exact_match": false
+  },
+  {
+    "id": "tictactoe_test_000015",
+    "true_caption": "X is in top right and bottom left and bottom middle; O is in top left and top middle",
+    "pred_caption": "X is in top middle and bottom left; O is in top right and middle left",
+    "exact_match": false
+  },
+  {
+    "id": "tictactoe_test_000016",
+    "true_caption": "X is in top middle and middle left and middle right; O is in center and bottom middle and bottom right",
+    "pred_caption": "X is in top middle and bottom left; O is in top right and middle left",
+    "exact_match": false
+  },
+  {
+    "id": "tictactoe_test_000017",
+    "true_caption": "X is in top middle; O is in middle right",
+    "pred_caption": "X is in top middle and bottom left; O is in top right and middle left",
+    "exact_match": false
+  },
+  {
+    "id": "tictactoe_test_000018",
+    "true_caption": "X is in top left and middle right and bottom left; O is in middle left and bottom right",
+    "pred_caption": "X is in top middle and bottom left; O is in top right and middle left",
+    "exact_match": false
+  },
+  {
+    "id": "tictactoe_test_000019",
+    "true_caption": "X is in top left and bottom right; O is in bottom left",
+    "pred_caption": "X is in top middle and bottom left; O is in top right and middle left",
+    "exact_match": false
+  },
+  {
+    "id": "tictactoe_test_000020",
+    "true_caption": "X is in top left and top right; O is in bottom left",
+    "pred_caption": "X is in top middle and bottom left; O is in top right and middle left",
+    "exact_match": false
+  },
+  {
+    "id": "tictactoe_test_000021",
+    "true_caption": "X is in middle left and middle right and bottom right; O is in top left and top middle and top right",
+    "pred_caption": "X is in top middle and bottom left; O is in top right and middle left",
+    "exact_match": false
+  },
+  {
+    "id": "tictactoe_test_000022",
+    "true_caption": "X is in top left and top right; O is in middle right and bottom left",
+    "pred_caption": "X is in top middle and bottom left; O is in top right and middle left",
+    "exact_match": false
+  },
+  {
+    "id": "tictactoe_test_000023",
+    "true_caption": "X is in bottom middle and bottom right; O is in top left",
+    "pred_caption": "X is in top middle and bottom left; O is in top right and middle left",
+    "exact_match": false
+  },
+  {
+    "id": "tictactoe_test_000024",
+    "true_caption": "X is in top left and top middle and bottom left; O is in top right and center and middle right",
+    "pred_caption": "X is in top middle and bottom left; O is in top right and middle left",
+    "exact_match": false
+  },
+  {
+    "id": "tictactoe_test_000025",
+    "true_caption": "X is in middle left and middle right; O is in top middle and bottom middle",
+    "pred_caption": "X is in top middle and bottom left; O is in top right and middle left",
+    "exact_match": false
+  },
+  {
+    "id": "tictactoe_test_000026",
+    "true_caption": "X is in middle left and center and bottom right; O is in top middle and middle right",
+    "pred_caption": "X is in top middle and bottom left; O is in top right and middle left",
+    "exact_match": false
+  },
+  {
+    "id": "tictactoe_test_000027",
+    "true_caption": "X is in top left and middle left; O is in top middle and bottom left",
+    "pred_caption": "X is in top middle and bottom left; O is in top right and middle left",
+    "exact_match": false
+  },
+  {
+    "id": "tictactoe_test_000028",
+    "true_caption": "X is in top right and bottom middle; O is in top middle and bottom left",
+    "pred_caption": "X is in top middle and bottom left; O is in top right and middle left",
+    "exact_match": false
+  },
+  {
+    "id": "tictactoe_test_000029",
+    "true_caption": "X is in top right and middle right and bottom middle; O is in top left and top middle and middle left",
+    "pred_caption": "X is in top middle and bottom left; O is in top right and middle left",
+    "exact_match": false
+  },
+  {
+    "id": "tictactoe_test_000030",
+    "true_caption": "X is in top right and middle left; O is in middle right and bottom right",
+    "pred_caption": "X is in top middle and bottom left; O is in top right and middle left",
+    "exact_match": false
+  }
+]

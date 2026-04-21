@@ -5,6 +5,8 @@ import json
 from pathlib import Path
 from typing import Dict, List, Set
 
+PROJECT_ROOT = Path(__file__).resolve().parents[2]
+DEFAULT_DATASET_ROOT = PROJECT_ROOT / "data" / "processed" / "tictactoe"
 
 POSITION_ORDER = [
     "top left",
@@ -21,7 +23,7 @@ POSITION_ORDER = [
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser()
-    parser.add_argument("--dataset-root", type=Path, default=Path("data/processed/tictactoe"))
+    parser.add_argument("--dataset-root", type=Path, default=DEFAULT_DATASET_ROOT)
     return parser.parse_args()
 
 
@@ -127,11 +129,12 @@ def validate_row(row: Dict[str, object], ids_seen: Set[str]) -> List[str]:
 
 def main() -> None:
     args = parse_args()
-    dataset_root = args.dataset_root
+    dataset_root = args.dataset_root.resolve()
+    metadata_root = dataset_root / "metadata"
     split_rows = {
-        "train": parse_jsonl(dataset_root / "train.jsonl"),
-        "val": parse_jsonl(dataset_root / "val.jsonl"),
-        "test": parse_jsonl(dataset_root / "test.jsonl"),
+        "train": parse_jsonl(metadata_root / "train.jsonl"),
+        "val": parse_jsonl(metadata_root / "val.jsonl"),
+        "test": parse_jsonl(metadata_root / "test.jsonl"),
     }
     ids_seen: Set[str] = set()
     all_errors: List[str] = []
@@ -143,7 +146,7 @@ def main() -> None:
                 all_errors.append(f"{split}:{i + 1}: {err}")
             image_path = row.get("image_path")
             if isinstance(image_path, str):
-                full_image_path = Path.cwd() / image_path
+                full_image_path = dataset_root / image_path
                 if not full_image_path.exists():
                     all_errors.append(f"{split}:{i + 1}: missing image file {image_path}")
             row_split = row.get("split")
