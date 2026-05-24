@@ -1,5 +1,9 @@
+"""
+Multi-head CNN:
+Image -> symbolic attributes/state -> reconstructed caption.
+Used to test structured prediction.
+"""
 from __future__ import annotations
-
 import torch.nn as nn
 
 

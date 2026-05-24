@@ -1,3 +1,8 @@
+"""
+Embedding CNN:
+Image -> sentence embedding -> nearest caption retrieval.
+Used as retrieval baseline.
+"""
 from __future__ import annotations
 import torch.nn as nn
 

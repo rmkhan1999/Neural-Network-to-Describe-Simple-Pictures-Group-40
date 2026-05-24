@@ -1,3 +1,8 @@
+"""
+CNN + LSTM:
+Image -> token sequence.
+This is the true caption generation model.
+"""
 import torch
 import torch.nn as nn
 
